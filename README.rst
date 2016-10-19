@@ -14,7 +14,7 @@ The blacklist is a Python ``set`` containing all domains in the blacklist:
     >>> 'bearsarefuzzy.com' in blacklist
     True
 
-The domains are guaranteed to be fully lowercased and striped of whitespace.
+The domains are guaranteed to be fully lowercased and stripped of whitespace.
 
 Source
 ------
