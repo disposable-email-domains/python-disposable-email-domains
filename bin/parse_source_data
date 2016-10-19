@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+lists = {
+    'blacklist': 'source_data/disposable_email_blacklist.conf',
+    'whitelist': 'source_data/whitelist.conf',
+}
+
+def parse_list(listname, filename):
+    return "{} = {{\n{}}}".format(
+        listname,
+        "".join([
+            "    '{}',\n".format(line.rstrip())
+            for line in open(filename).readlines()
+        ])
+    )
+
+print("\n\n".join([parse_list(*args) for args in lists.items()]))

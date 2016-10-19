@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf source_data
+git clone git@github.com:martenson/disposable-email-domains.git source_data
+python bin/parse_source_data > disposable_email_domains/__init__.py
