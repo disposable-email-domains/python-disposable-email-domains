@@ -14,4 +14,4 @@ def parse_list(listname, filename):
         ])
     )
 
-print("\n\n".join([parse_list(*args) for args in lists.items()]))
+print("\n\n".join([parse_list(*args) for args in sorted(lists.items())]))

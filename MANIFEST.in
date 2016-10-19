@@ -1,3 +1,4 @@
 include LICENSE.txt
+include CONTRIBUTING.md
 recursive-include source_data *.conf
 recursive-include bin *
