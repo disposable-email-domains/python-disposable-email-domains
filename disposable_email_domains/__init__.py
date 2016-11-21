@@ -1324,6 +1324,7 @@ blacklist = {
     'noclickemail.com',
     'nodezine.com',
     'nogmailspam.info',
+    'noicd.com',
     'nokiamail.com',
     'nom.za',
     'nomail.pw',

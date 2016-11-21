@@ -9,7 +9,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='disposable-email-domains',
-    version='0.0.2',
+    version='0.0.3',
     description='A set of disposable email domains',
     long_description=long_description,
     url='https://github.com/di/disposable-email-domains',
