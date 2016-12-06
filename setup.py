@@ -4,12 +4,14 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
+__version__ = '0.0.4'
+
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name='disposable-email-domains',
-    version='0.0.4',
+    version=__version__,
     description='A set of disposable email domains',
     long_description=long_description,
     url='https://github.com/di/disposable-email-domains',
