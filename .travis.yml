@@ -2,21 +2,23 @@ language: python
 
 python: 3.5
 
-env:
-  - TOXENV=py27
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=py35
+matrix:
+  include:
+    - python: 2.7
+      env: TOXENV=py27
+    - python: 3.4
+      env: TOXENV=py34
+    - python: 3.5
+      env: TOXENV=py35
+    - python: 3.6
+      env: TOXENV=py36
+    - script: bin/check_for_differences
+      env:
+        - SUITE=Source
 
 install: pip install tox
 
 script: tox
-
-matrix:
-  include:
-    - script: bin/check_for_differences
-      env:
-        - SUITE=Source
 
 notifications:
   email: false
