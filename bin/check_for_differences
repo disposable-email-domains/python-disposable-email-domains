@@ -13,9 +13,32 @@ diff /tmp/disposable-email-domains/disposable_email_blacklist.conf source_data/d
 diff /tmp/disposable-email-domains/whitelist.conf source_data/whitelist.conf && \
 diff /tmp/disposable_email_domains__init__.py disposable_email_domains/__init__.py
 
-EXIT=$?
+CHANGES=$?
 
-rm -rf /tmp/disposable-email-domains
-rm /tmp/disposable_email_domains__init__.py
+if [ $TRAVIS_EVENT_TYPE = 'cron' ] && [ $CHANGES != 0 ]; then
+    # Git setup
+    git config --global user.email 'dee-eye@users.noreply.github.com'
+    git config --global user.name "Dee Eye"
+    git remote rm origin
+    git remote add origin https://dee-eye:$OAUTH_TOKEN@github.com/di/disposable-email-domains.git
 
-exit $EXIT
+    # Copy in the changed files
+    cp /tmp/disposable-email-domains/disposable_email_blacklist.conf source_data/disposable_email_blacklist.conf
+    cp /tmp/disposable-email-domains/whitelist.conf source_data/whitelist.conf
+    cp /tmp/disposable_email_domains__init__.py disposable_email_domains/__init__.py
+
+    # Bump the version
+    pip install bump
+    VERSION=`bump`
+
+    # Add changes, push and make a PR
+    git checkout -b version-$VERSION
+    git commit -am "Version $VERSION"
+    git push origin HEAD
+    curl -u "dee-eye:$OAUTH_TOKEN" --data '{"title": "'"Version $VERSION"'", "head": "'"version-$VERSION"'", "base": "master"}' https://api.github.com/repos/di/testing/pulls
+    exit $?
+else
+    rm -rf /tmp/disposable-email-domains
+    rm /tmp/disposable_email_domains__init__.py
+    exit $CHANGES
+fi

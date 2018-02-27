@@ -1,24 +1,22 @@
 language: python
-
 python: 3.5
-
 matrix:
   include:
-    - python: 2.7
-      env: TOXENV=py27
-    - python: 3.4
-      env: TOXENV=py34
-    - python: 3.5
-      env: TOXENV=py35
-    - python: 3.6
-      env: TOXENV=py36
-    - script: bin/check_for_differences
-      env:
-        - SUITE=Source
-
+  - python: 2.7
+    env: TOXENV=py27
+  - python: 3.4
+    env: TOXENV=py34
+  - python: 3.5
+    env: TOXENV=py35
+  - python: 3.6
+    env: TOXENV=py36
+  - script: bin/check_for_differences
+    env:
+    - SUITE=Source
 install: pip install tox
-
 script: tox
-
 notifications:
   email: false
+env:
+  global:
+    secure: D9jmur8BmmuaT5jFNBOeVt3S1NbgYC6y2BRSZ9hnCNfafYVaUgiu6S6E3qLEKu2Z+eR0BNCdri9mQrQytHbo4r+mnpt3KiS644cp9LTFVx42aCamBbA+14iAJphrrz7QMqIyF0ARRdiRrio4ChGRs0w+jjI8t+wE0tusnSJdJq3KYdVWDc8kZULGKsElCtyHMM0FSKSzQhUfwRlF6P8sZMfAhPiIaJeW7/LL/zB4ONJh148FypaA+ccJGY/8NAXP1FG0/TtoZwHXlx0utwZA0FAlUOalmTCKEaOrFsdJrXwo1r60JtuF74OoHmG/658FDxtyjHRy9ksQ0drE4YKdF2D7dIgNtRR32afq8F1mPy9KqJ8B1jEjwHxgOIi8w/BZduGqBw8iK4j/c3j9vxU+caC6yRWu2MQEcye1kM72fS4UCT0sUWMlFsaXCuh6OiA5X7WPuK4OC1oAoFWgjhI00PR2urS6Xz7/KRFtknr/N+W/t70oVVau/7glgOuzYKXMMp8N1Fyh0q95lQ21uncQ2+ktw/BHRKclMXGT+vHeUGoAN1hUbosQgWcb/BtW3qS/h5QJgvpEPCAumDLc1po6jUWIXuRbDQXJsOw4UPzoGSdx6iRgXyRgCEeLhuD4/0yEV2O6Tm4MY1lHSgXyzfnZ2J98TbIUkBciuCKt/C7LQ+0=
