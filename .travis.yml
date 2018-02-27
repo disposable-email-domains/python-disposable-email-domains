@@ -1,8 +1,9 @@
 language: python
-python: 3.5
+python: 3.6
 matrix:
   include:
-  - python: 2.7
+  - stage: test
+    python: 2.7
     env: TOXENV=py27
   - python: 3.4
     env: TOXENV=py34
@@ -13,10 +14,20 @@ matrix:
   - script: bin/check_for_differences
     env:
     - SUITE=Source
+  - stage: deploy
+    script: skip
+    deploy:
+      provider: pypi
+      distributions: "sdist bdist_wheel"
+      user: dee-eye
+      password:
+        secure: RM7wkWtiWh2py7VM/DWu2BpvfS64VlVcZv6yM0DP3TpYIvJ+ija8roQpiTrMqXnln5cWaPxdj4MmG6cY0ZjZaJvxefOnlq8rHiP8cIQI7/3DKmAHmikbYndHfpnbE9PwfnYjkxF+DMLQRAXQoIKzuDW1yEIawN/EygJsTrOLUU1m8NOkEvvWccQA2kzY8w0URIith2oMeyaMvfxA9lI8SrpgqhwjjRNK63yV+VvnmdR9YqAaOG/V3RbsT7vDe9hCyw5KAGKPY3PTlWXavQtuW5YhB+Nh9krCD7FTSLghnuWPXbX7C/lyMfopXXdEhLZzVvzurPOqcG2Ci3LDArZaTT1JTcXqX358cA8Icx7O0KVCF3kzkTY5fLBJ5G1aHijyfG0HtcINCnp68MK0Kw5QqdAJ1X795KYe4EKSnGOQUOpFW8D0KYjcInbGR4OT8JlXC75tbxswmSbhI1PuyKD+7g95ZxGwY76CpBNre55B+ForPMXCmBALBVSTSoxt6Uad/nPNe6zmfdLHO494DZKvrxbsau3/aojoz0/H+0tlG3qYpTNEUNd3bq12CmJU5/ZG8uF+dLi94MI/3KXCaJf67xUDTuCfkz8k7n6qtZZw9rYTTq03P3dnVwcULBJ42IuSsJdX8uBnvRaO/MiQUaaFyjlTSimYMcunteJUTjZnKBU=
+
 install: pip install tox
 script: tox
 notifications:
   email: false
+
 env:
   global:
     secure: D9jmur8BmmuaT5jFNBOeVt3S1NbgYC6y2BRSZ9hnCNfafYVaUgiu6S6E3qLEKu2Z+eR0BNCdri9mQrQytHbo4r+mnpt3KiS644cp9LTFVx42aCamBbA+14iAJphrrz7QMqIyF0ARRdiRrio4ChGRs0w+jjI8t+wE0tusnSJdJq3KYdVWDc8kZULGKsElCtyHMM0FSKSzQhUfwRlF6P8sZMfAhPiIaJeW7/LL/zB4ONJh148FypaA+ccJGY/8NAXP1FG0/TtoZwHXlx0utwZA0FAlUOalmTCKEaOrFsdJrXwo1r60JtuF74OoHmG/658FDxtyjHRy9ksQ0drE4YKdF2D7dIgNtRR32afq8F1mPy9KqJ8B1jEjwHxgOIi8w/BZduGqBw8iK4j/c3j9vxU+caC6yRWu2MQEcye1kM72fS4UCT0sUWMlFsaXCuh6OiA5X7WPuK4OC1oAoFWgjhI00PR2urS6Xz7/KRFtknr/N+W/t70oVVau/7glgOuzYKXMMp8N1Fyh0q95lQ21uncQ2+ktw/BHRKclMXGT+vHeUGoAN1hUbosQgWcb/BtW3qS/h5QJgvpEPCAumDLc1po6jUWIXuRbDQXJsOw4UPzoGSdx6iRgXyRgCEeLhuD4/0yEV2O6Tm4MY1lHSgXyzfnZ2J98TbIUkBciuCKt/C7LQ+0=
