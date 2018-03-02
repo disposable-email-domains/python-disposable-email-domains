@@ -843,7 +843,6 @@ blacklist = {
     'evilcomputer.com',
     'evopo.com',
     'evyush.com',
-    'example.com',
     'exitstageleft.net',
     'explodemail.com',
     'express.net.ua',
