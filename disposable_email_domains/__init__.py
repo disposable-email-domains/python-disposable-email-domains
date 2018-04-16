@@ -1491,6 +1491,7 @@ blacklist = {
     'lukop.dk',
     'luv2.us',
     'lyfestylecreditsolutions.com',
+    'lzoaq.com',
     'm21.cc',
     'm4ilweb.info',
     'maboard.com',
