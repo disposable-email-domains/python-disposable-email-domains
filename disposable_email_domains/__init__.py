@@ -1859,6 +1859,7 @@ blacklist = {
     'nutpa.net',
     'nuts2trade.com',
     'nwldx.com',
+    'nwytg.com',
     'ny7.me',
     'nypato.com',
     'o2stk.org',
