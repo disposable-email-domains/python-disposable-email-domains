@@ -2274,7 +2274,6 @@ blacklist = {
     'softpls.asia',
     'sogetthis.com',
     'sohai.ml',
-    'sohu.com',
     'sohus.cn',
     'soioa.com',
     'soisz.com',
