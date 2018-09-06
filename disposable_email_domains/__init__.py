@@ -2902,6 +2902,7 @@ blacklist = {
     'ytpayy.com',
     'yugasandrika.com',
     'yui.it',
+    'yuoia.com',
     'yuurok.com',
     'yxzx.net',
     'yyolf.net',
