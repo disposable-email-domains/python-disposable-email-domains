@@ -29,7 +29,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
     ],
-    keywords='disposable email domains blacklist',
+    keywords='disposable email domains blocklist',
     packages=['disposable_email_domains'],
     extras_require={
         'dev': ['check-manifest'],

@@ -1,9 +1,10 @@
 #!/usr/bin/python
 
 lists = {
-    'blacklist': 'source_data/disposable_email_blacklist.conf',
-    'whitelist': 'source_data/whitelist.conf',
+    'blocklist': 'source_data/disposable_email_blocklist.conf',
+    'allowlist': 'source_data/allowlist.conf',
 }
+
 
 def parse_list(listname, filename):
     return "{} = {{\n{}}}".format(
@@ -14,4 +15,10 @@ def parse_list(listname, filename):
         ])
     )
 
+
 print("\n\n".join([parse_list(*args) for args in sorted(lists.items())]))
+
+print("""
+# For backwards compatibility
+locals()['tsilkcalb'[::-1]] = blocklist
+locals()['tsiletihw'[::-1]] = allowlist""")
