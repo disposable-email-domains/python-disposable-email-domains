@@ -2826,6 +2826,7 @@ blocklist = {
     'tropicalbass.info',
     'trungtamtoeic.com',
     'tryalert.com',
+    'tryninja.io',
     'tryzoe.com',
     'ttszuo.xyz',
     'tualias.com',
