@@ -976,6 +976,7 @@ blocklist = {
     'emailage.ml',
     'emailage.tk',
     'emaildienst.de',
+    'emaildrop.io',
     'emailfake.ml',
     'emailfake.nut.cc',
     'emailfreedom.ml',
