@@ -1212,7 +1212,6 @@ blocklist = {
     'g3xmail.top',
     'g4hdrop.us',
     'gafy.net',
-    'gaggle.net',
     'galaxy.tv',
     'gally.jp',
     'gamail.top',
