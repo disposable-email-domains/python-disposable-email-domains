@@ -2520,6 +2520,7 @@ blocklist = {
     'spambooger.com',
     'spambox.info',
     'spambox.irishspringrealty.com',
+    'spambox.me',
     'spambox.org',
     'spambox.us',
     'spamcero.com',
