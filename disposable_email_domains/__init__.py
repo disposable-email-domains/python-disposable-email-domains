@@ -718,6 +718,7 @@ blocklist = {
     'cmail.net',
     'cmail.org',
     'cnamed.com',
+    'cndps.com',
     'cnew.ir',
     'cnmsg.net',
     'cnsds.de',
