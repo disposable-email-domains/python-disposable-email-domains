@@ -2963,6 +2963,7 @@ blocklist = {
     'tryzoe.com',
     'ttszuo.xyz',
     'tualias.com',
+    'tuofs.com',
     'turoid.com',
     'turual.com',
     'tvchd.com',
