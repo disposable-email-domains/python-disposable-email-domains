@@ -1018,6 +1018,7 @@ blocklist = {
     'emailage.ml',
     'emailage.tk',
     'emailate.com',
+    'emailcu.icu',
     'emaildienst.de',
     'emaildrop.io',
     'emailfake.ml',
