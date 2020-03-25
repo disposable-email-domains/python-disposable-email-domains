@@ -544,6 +544,7 @@ blocklist = {
     'avia-tonic.fr',
     'avls.pt',
     'awatum.de',
+    'awdrt.org',
     'awiki.org',
     'awsoo.com',
     'axiz.org',
