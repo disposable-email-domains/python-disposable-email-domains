@@ -6,7 +6,7 @@ here = path.abspath(path.dirname(__file__))
 
 __version__ = '0.0.58'
 
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
@@ -14,6 +14,7 @@ setup(
     version=__version__,
     description='A set of disposable email domains',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/di/disposable-email-domains',
     author='Dustin Ingram',
     author_email='github@dustingram.com',
