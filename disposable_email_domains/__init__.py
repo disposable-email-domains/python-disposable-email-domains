@@ -2935,6 +2935,7 @@ blocklist = {
     'tryalert.com',
     'tryninja.io',
     'tryzoe.com',
+    'ttirv.org',
     'ttszuo.xyz',
     'tualias.com',
     'tuofs.com',
