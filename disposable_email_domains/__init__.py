@@ -2915,6 +2915,7 @@ blocklist = {
     'trashmail.org',
     'trashmail.ws',
     'trashmailer.com',
+    'trashmailgenerator.de',
     'trashmails.com',
     'trashymail.com',
     'trashymail.net',
