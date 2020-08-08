@@ -1069,6 +1069,7 @@ blocklist = {
     'empireanime.ga',
     'emstjzh.com',
     'emz.net',
+    'enayu.com',
     'enterto.com',
     'envy17.com',
     'eoffice.top',
