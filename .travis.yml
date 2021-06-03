@@ -25,7 +25,7 @@ matrix:
     deploy:
       provider: pypi
       distributions: "sdist bdist_wheel"
-      user: dee-eye
+      user: __token__
       password:
         secure: "niyqjumaNJCcma3JSQXozR8U1nu/8+8CLHRkokfZkAUoXgthy0QWiRF71koc6aWaN4xVyLBPzqAb4Dkxw4VetzXnlWuEIktxEKYtxn9UrxNn3mfcaQKS/aeCXoP6UKCu1wvLeBCJsjpgLIzHkJFLnpdw52syo0IHxogu4dQzPZwIGNLeu5cNDxkiezH64FoIDEasqbGmunuzemGl1PkscwojyiGCbYkFDYbKh3Fo5Dna1dMT+1qNnQXP3f/4O93sJ/+1qwxYVPjJmmg9WG75INmMtuIJsOlXInRr7D4Rz85F06sfdbNURFRkAKQcr79txZvWdEfnrgJ6r2T7IKdrIqcwsyOY6IvQh9w8gzUYWxCa3g2RtNlFXRBoNolqHToDPDPwhrpGPXant437dyRM3cNK6lj3DizJuX806TZxFgLaaqHdQ887ATZ/jauMTBY+XbIRqqBhw1YqO5ffrE6907KRNRElt4fL52bbBKB//3ri1trLSR/4IEf34BtVIWg+JdbfAIxHRrdIJU2eLsyGNbgTHFMbse/G3MwO/XCY6xHKotXSyb15sSoFSNEcYlwyvlztMYDvCZP5GFM8edG4/1c2Sh69tYcFCQeZ6oHdF/JKLeigKtAkuFTQqkkxS6OrzC9F0YElCrsnBXJGH8qdt5294WY0nIeK/sfhU07qg3g="
 
