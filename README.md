@@ -23,5 +23,5 @@ This module attempts to provide a mirror of that project as a Python module.
 If you feel a domain should or shouldn't be on the blocklist, you are
 encouraged to make a pull request against the [source repository][2]
 
-[1]: https://github.com/martenson/disposable-email-domains
-[2]: https://github.com/martenson/disposable-email-domains
+[1]: https://github.com/disposable-email-domains/disposable-email-domains
+[2]: https://github.com/disposable-email-domains/disposable-email-domains
