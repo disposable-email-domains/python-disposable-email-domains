@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  schedule:
+    - cron: '* * * * *'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: Install Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Check for differences
+        run: bin/check_for_differences
+        env:
+          SUITE: Source
+      - name: Publish package
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: dee-eye
+          password: ${{ secrets.PYPI_API_TOKEN }}
