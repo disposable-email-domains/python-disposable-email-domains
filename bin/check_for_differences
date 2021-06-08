@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 
 # Clone the source repository
 rm -rf source_data
