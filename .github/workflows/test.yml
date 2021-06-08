@@ -1,0 +1,36 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Python ${{ matrix.python }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [3.6, 3.7, 3.8, 3.9]
+      fail-fast: false
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: Install Python ${{ matrix.python }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install pip dependencies
+        run: pip install -U pip tox virtualenv
+      - name: Run tox
+        run: tox -e py
+
+  check_for_differences:
+    name: Check for upstream differences
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: Install Python
+        uses: actions/setup-python@v2
+      - name: Check for upstream differences
+        run: bin/check_for_differences
+        env:
+          TEST_ONLY: true

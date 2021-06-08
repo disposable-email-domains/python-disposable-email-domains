@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 
 # Clone the source repository
 rm -rf source_data
@@ -11,7 +12,7 @@ git diff --exit-code
 
 CHANGES=$?
 
-if [ $TRAVIS_EVENT_TYPE = 'cron' ] && [ $CHANGES != 0 ]; then
+if [ -z "${TEST_ONLY}" ] && [ $CHANGES != 0 ]; then
     # Git setup
     git config --global user.email 'dee-eye@users.noreply.github.com'
     git config --global user.name "Dee Eye"
