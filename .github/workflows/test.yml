@@ -1,6 +1,6 @@
 name: Test
 
-on: pull_request
+on: [push, pull_request]
 
 jobs:
   test:
@@ -19,7 +19,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install pip dependencies
         run: pip install -U pip tox virtualenv
-      - name: Test packaging
+      - name: Run tox
         run: tox -e py
 
   check_for_differences:
