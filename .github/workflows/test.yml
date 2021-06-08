@@ -36,12 +36,9 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
-      - name: Install Python 3.8
+      - name: Install Python
         uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
       - name: Check for upstream differences
         run: bin/check_for_differences
         env:
           TEST_ONLY: true
-
