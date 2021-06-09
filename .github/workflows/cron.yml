@@ -1,9 +1,8 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   release:
@@ -17,9 +16,3 @@ jobs:
         run: bin/check_for_differences
         env:
           SUITE: Source
-      - name: Publish package
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
-          skip_existing: true
