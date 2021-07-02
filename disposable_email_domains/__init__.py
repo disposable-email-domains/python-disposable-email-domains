@@ -3218,6 +3218,7 @@ blocklist = {
     'web2mailco.com',
     'webcontact-france.eu',
     'webemail.me',
+    'webhook.site',
     'webm4il.info',
     'webmail24.top',
     'webtrip.ch',
