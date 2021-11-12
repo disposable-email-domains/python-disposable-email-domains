@@ -26,7 +26,7 @@ if [ -z "${TEST_ONLY}" ] && [ $CHANGES != 0 ]; then
     # Add changes, push and make a PR
     git checkout -b version-$VERSION
     git commit -am "Version $VERSION"
-    git push origin HEAD
+    git push -f origin HEAD
     curl --show-error --fail -u "dee-eye:$OAUTH_TOKEN" --data '{"title": "'"Version $VERSION"'", "head": "'"version-$VERSION"'", "base": "master"}' https://api.github.com/repos/disposable-email-domains/python-disposable-email-domains/pulls
     exit $?
 else
