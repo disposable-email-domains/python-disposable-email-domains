@@ -16,3 +16,4 @@ jobs:
         run: bin/check_for_differences
         env:
           SUITE: Source
+          OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
