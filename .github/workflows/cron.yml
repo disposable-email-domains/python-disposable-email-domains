@@ -1,4 +1,4 @@
-name: Release
+name: Cron
 
 on:
   schedule:
@@ -10,10 +10,11 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: Install Python
         uses: actions/setup-python@v2
       - name: Check for differences
         run: bin/check_for_differences
         env:
-          SUITE: Source
           OAUTH_TOKEN: ${{ secrets.OAUTH_TOKEN }}
