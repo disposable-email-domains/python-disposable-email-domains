@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: Install Python
         uses: actions/setup-python@v2
       - name: Check for differences
