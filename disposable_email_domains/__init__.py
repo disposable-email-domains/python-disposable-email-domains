@@ -2904,6 +2904,7 @@ blocklist = {
     'tempemail.net',
     'tempinbox.co.uk',
     'tempinbox.com',
+    'tempmail.cn',
     'tempmail.co',
     'tempmail.de',
     'tempmail.eu',
