@@ -1938,6 +1938,7 @@ blocklist = {
     'luv2.us',
     'lyfestylecreditsolutions.com',
     'lzoaq.com',
+    'maildax.me',
     'm21.cc',
     'm4ilweb.info',
     'maboard.com',
