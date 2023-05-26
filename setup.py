@@ -29,9 +29,11 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Typing :: Typed",
     ],
     keywords="disposable email domains blocklist",
     packages=["disposable_email_domains"],
+    package_data={"disposable_email_domains": ["py.typed"]},
     extras_require={
         "dev": ["check-manifest"],
     },
