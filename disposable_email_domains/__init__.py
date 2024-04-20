@@ -811,7 +811,6 @@ blocklist = {
     'clixser.com',
     'clonemoi.tk',
     'cloud-mail.top',
-    'cloudns.cx',
     'clout.wiki',
     'clrmail.com',
     'cmail.club',
