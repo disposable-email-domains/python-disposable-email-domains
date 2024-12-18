@@ -3291,6 +3291,7 @@ blocklist = {
     'syosetu.gq',
     'syujob.accountants',
     'szerz.com',
+    'tacomail.de',
     'tafmail.com',
     'tafoi.gr',
     'taglead.com',
