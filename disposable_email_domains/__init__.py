@@ -1195,6 +1195,7 @@ blocklist = {
     'eeedv.de',
     'eelmail.com',
     'efxs.ca',
+    'egvoo.com',
     'egzones.com',
     'einmalmail.de',
     'einrot.com',
