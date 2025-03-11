@@ -2520,6 +2520,7 @@ blocklist = {
     'mjj.edu.ge',
     'mjukglass.nu',
     'mkpfilm.com',
+    'mkzaso.com',
     'ml8.ca',
     'mliok.com',
     'mm.my',
