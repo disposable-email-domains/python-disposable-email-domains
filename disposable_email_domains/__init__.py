@@ -1349,6 +1349,7 @@ blocklist = {
     'evusd.com',
     'evvgo.com',
     'evyush.com',
+    'exclussi.com',
     'exdonuts.com',
     'exelica.com',
     'existiert.net',
