@@ -4572,7 +4572,6 @@ blocklist = {
     'xoxox.cc',
     'xperiae5.com',
     'xrap.de',
-    'xrho.com',
     'xstyled.net',
     'xvx.us',
     'xww.ro',
