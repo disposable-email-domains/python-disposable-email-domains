@@ -757,6 +757,7 @@ blocklist = {
     'blackgoldagency.ru',
     'blackmarket.to',
     'bladesmail.net',
+    'blenro.com',
     'blip.ch',
     'blip.ovh',
     'blnkt.net',
