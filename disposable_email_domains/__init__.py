@@ -2060,6 +2060,7 @@ blocklist = {
     'hidemail.de',
     'hidemail.pro',
     'hidemail.us',
+    'hidesmail.net',
     'hidmail.org',
     'hidzz.com',
     'hieuclone.net',
