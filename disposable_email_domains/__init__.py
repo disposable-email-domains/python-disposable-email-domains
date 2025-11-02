@@ -1361,6 +1361,7 @@ blocklist = {
     'easy-trash-mail.com',
     'easyhomefit.com',
     'easymailer.live',
+    'easymails.cc',
     'easynetwork.info',
     'easytrashmail.com',
     'eatmea2z.club',
