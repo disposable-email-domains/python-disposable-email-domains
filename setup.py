@@ -4,7 +4,7 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 
-__version__ = "0.0.156"
+__version__ = "0.0.157"
 
 with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
