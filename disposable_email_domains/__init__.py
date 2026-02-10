@@ -1355,6 +1355,7 @@ blocklist = {
     'dmts.fr.nf',
     'dmxs8.com',
     'dndent.com',
+    'dnsclick.com',
     'dnses.ro',
     'doanart.com',
     'dob.jp',
