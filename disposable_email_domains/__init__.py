@@ -3910,6 +3910,7 @@ blocklist = {
     'razemail.com',
     'razuz.com',
     'rbb.org',
+    'rbs1.xyz',
     'rcasd.com',
     'rcpt.at',
     'rdklcrv.xyz',
