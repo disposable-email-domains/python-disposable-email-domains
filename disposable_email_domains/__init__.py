@@ -938,6 +938,7 @@ blocklist = {
     'byespm.com',
     'byom.de',
     'bytedigi.com',
+    'botnet.my.id',
     'c-eric.fr.nf',
     'c1ph3r.xyz',
     'c4.fr',
