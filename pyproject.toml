@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "disposable-email-domains"
+version = "0.0.169"
+description = "A set of disposable email domains"
+readme = "README.md"
+authors = [
+  { name = "Dustin Ingram", email = "github@dustingram.com" },
+]
+license = { text = "MIT" }
+keywords = ["disposable", "email", "domains", "blocklist"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+
+[project.urls]
+Homepage = "https://github.com/disposable-email-domains/disposable-email-domains"
+
+[tool.setuptools]
+packages = ["disposable_email_domains"]
+
+[tool.setuptools.package-data]
+disposable_email_domains = ["py.typed"]
+
+
