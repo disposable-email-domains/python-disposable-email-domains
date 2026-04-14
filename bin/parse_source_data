@@ -19,6 +19,6 @@ print("\n\n".join([parse_list(*args) for args in sorted(lists.items())]))
 
 print("""
 # For backwards compatibility
-allowlist = set()
+allowlist: set[str] = set()
 locals()['tsilkcalb'[::-1]] = blocklist
 locals()['tsiletihw'[::-1]] = allowlist""")
