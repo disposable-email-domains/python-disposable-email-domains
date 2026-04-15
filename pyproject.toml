@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "disposable-email-domains"
-version = "0.0.169"
+version = "0.0.170"
 description = "A set of disposable email domains"
 readme = "README.md"
 authors = [
