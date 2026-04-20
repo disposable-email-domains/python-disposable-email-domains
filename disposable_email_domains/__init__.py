@@ -983,6 +983,7 @@ blocklist = {
     'copyhome.win',
     'coreclip.com',
     'corhash.net',
+    'cosdas.com',
     'cosmorph.com',
     'cosoinan.com',
     'cotasen.com',
