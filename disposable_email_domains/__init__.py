@@ -551,6 +551,7 @@ blocklist = {
     'b2bx.net',
     'b2cmail.de',
     'b7s.ru',
+    'babyeat.food',
     'backilnge.com',
     'bacteroidmail.com',
     'badgerland.eu',
