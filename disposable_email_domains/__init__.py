@@ -2642,6 +2642,7 @@ blocklist = {
     'kwilco.net',
     'kwtest.io',
     'kyal.pl',
+    'kynninc.com',
     'kyois.com',
     'kyriog.fr',
     'kyuusei.fr.nf',
