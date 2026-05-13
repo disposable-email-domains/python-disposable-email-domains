@@ -2464,6 +2464,7 @@ blocklist = {
     'javadmin.com',
     'javaemail.com',
     'jbsze.com',
+    'jbsze.ne',
     'jcnorris.com',
     'jdmadventures.com',
     'jdz.ro',
