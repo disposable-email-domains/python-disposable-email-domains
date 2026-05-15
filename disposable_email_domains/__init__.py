@@ -5268,6 +5268,7 @@ blocklist = {
     'xepa.ru',
     'xfavaj.com',
     'xidealx.com',
+    'xikemail.com',
     'ximenor.site',
     'xjoi.com',
     'xkx.me',
