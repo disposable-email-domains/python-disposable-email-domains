@@ -3081,6 +3081,7 @@ blocklist = {
     'mannawo.com',
     'mansiondev.com',
     'maohe.cloud',
+    'marineso.com',
     'mark-compressoren.ru',
     'marketlink.info',
     'markmurfin.com',
