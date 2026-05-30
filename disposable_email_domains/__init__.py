@@ -1277,6 +1277,7 @@ blocklist = {
     'doobb.com',
     'doojazz.com',
     'doquier.tk',
+    'doreact.com',
     'dotapodemail.com',
     'dotman.de',
     'dotmsg.com',
