@@ -3177,6 +3177,7 @@ blocklist = {
     'goatmail.uk',
     'gob.re',
     'godfare.com',
+    'godulygmail.com',
     'goemailgo.com',
     'goeschman.com',
     'gohivezone.com',
